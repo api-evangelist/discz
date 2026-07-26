@@ -1,8 +1,23 @@
 aid: discz
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/discz.png
 name: Discz
-description: 'Discz is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Discz is a consumer mobile application that blends music discovery with social
+  chat, styled as a modern, MySpace-inspired music community. Users discover songs, build music
+  profiles, and chat with others around shared taste in music. The iOS app is developed by Discz,
+  a Y Combinator-backed startup and a portfolio company of DCM Ventures. Discz publishes no public
+  developer API, SDK, or developer portal; its surface is the consumer iOS app distributed through
+  the Apple App Store.'
 url: https://raw.githubusercontent.com/api-evangelist/discz/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Music
+- Music Discovery
+- Social
+- Chat
+- Mobile App
+- iOS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/discz-domain-security.yml
 - type: Website
   url: https://www.discz.com/
+- type: TermsOfService
+  url: https://www.discz.com/TOS.pdf
+- type: PrivacyPolicy
+  url: https://www.discz.com/PrivacyPolicy.pdf
+- type: SignUp
+  url: https://apps.apple.com/us/app/discz-myspace-music-chat/id1521888879
+- type: Instagram
+  url: https://www.instagram.com/disczmusic/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
